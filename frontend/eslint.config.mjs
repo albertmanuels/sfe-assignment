@@ -155,7 +155,7 @@ export default tseslint.config([
       indent: [ERROR, 2],
       quotes: [ERROR, "double", { avoidEscape: true }],
       semi: [ERROR, "always"],
-      "comma-dangle": [ERROR, "always-multiline"],
+      // "comma-dangle": [WARN, "" ],
       "no-trailing-spaces": ERROR,
       "eol-last": [ERROR, "always"],
 
