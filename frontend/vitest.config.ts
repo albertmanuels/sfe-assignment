@@ -3,6 +3,8 @@ import viteConfig from './vite.config'
 
 export default mergeConfig(viteConfig, defineConfig({
  test: {
-    setupFiles: ['vitest-cleanup-after-each.ts'],
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: ['./src/test/setup.ts'],
   },
 }))
